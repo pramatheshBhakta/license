@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="section_padding">16dp</dimen>
+    <dimen name="section_margin_top">8dp</dimen>
+    <dimen name="text_size_section_title">18sp</dimen>
+    <dimen name="section_title_padding">8dp</dimen>
+</resources>

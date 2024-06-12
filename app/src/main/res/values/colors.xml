@@ -1,0 +1,13 @@
+<resources>
+    <color name="primaryColor">#6200EE</color>
+    <color name="primaryDarkColor">#3700B3</color>
+    <color name="accentColor">#03DAC5</color>
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="backgroundColor">#000000</color>
+    <color name="dividerColor">#BDBDBD</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="light_gray">#3D3D3D</color> <!-- You can adjust the shade of gray as per your preference -->
+
+</resources>

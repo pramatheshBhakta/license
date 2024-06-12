@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/black">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/activity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apache License"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:paddingBottom="10dp" />
+
+    <!-- ScrollView to make the text scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- TextView to display the text -->
+        <TextView
+            android:id="@+id/dependency_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/light_gray_box"
+            android:fontFamily="serif-monospace"
+            android:padding="16dp"
+            android:textAlignment="textStart"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        <!-- Use monospaced font -->
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">License</string>
+
+    <!-- String resources for dependencies -->
+    <string-array name="dependencies_array">
+<!--        <item>Google Play Services Location</item>-->
+        <item>Pcap4j Core</item>
+        <item>Jackson Core</item>
+        <item>OkHttp</item>
+        <item>Flexbox</item>
+        <item>Apache Commons Math3</item>
+        <item>Glide</item>
+<!--        <item>App Update</item>-->
+        <item>Zxing Android Embedded</item>
+        <item>JUnit Jupiter</item>
+        <item>Mockito Core</item>
+        <item>PowerMock API Mockito2</item>
+        <item>PowerMock Module JUnit4</item>
+<!--        <item>Test Core</item>-->
+<!--        <item>Test Ext JUnit</item>-->
+        <item>Mockito Android</item>
+        <item>JUnit</item>
+        <item>Espresso Core</item>
+        <item>Undertow Core</item>
+         <item>Firebase </item>
+
+        <item>Camera Core</item>
+
+        <item>Java UUID Generator</item>
+        <item>Stomp Protocol Android</item>
+        <item>RxJava</item>
+        <item>AWS Android SDK S3</item>
+        <item>SceneForm</item>
+        <item>ML Kit Translate</item>
+        <item>Preference</item>
+    </string-array>
+
+
+</resources>
