@@ -2,6 +2,8 @@ package com.example.license;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.io.IOException;
@@ -11,6 +13,8 @@ public class DependencyDetail extends AppCompatActivity {
 
     private TextView activityTitle;
     private TextView dependencyDetail;
+    private ImageView backArrow;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +29,13 @@ public class DependencyDetail extends AppCompatActivity {
 
         String detailText = readTextFromFile(dependency + ".txt");
         dependencyDetail.setText(detailText);
-
+        backArrow = findViewById(R.id.back_arrow);
+        backArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish(); // Finish the current activity and go back to the previous one
+            }
+        });
         //adjustTextSize();
     }
 
@@ -50,22 +60,22 @@ public class DependencyDetail extends AppCompatActivity {
         return stringBuilder.toString();
     }
 
-//    private void adjustTextSize() {
-//        DisplayMetrics metrics = getResources().getDisplayMetrics();
-//        float screenWidthDp = metrics.widthPixels / metrics.density;
-//
-//        if (screenWidthDp >= 600) {
-//            dependencyDetail.setTextSize(20);
-//            activityTitle.setTextSize(28);
-//        } else if (screenWidthDp >= 400) {
-//            dependencyDetail.setTextSize(18);
-//            activityTitle.setTextSize(26);
-//        } else {
-//            dependencyDetail.setTextSize(16);
-//            activityTitle.setTextSize(24);
-//        }
-//
-//        // Set monospaced font
-//        dependencyDetail.setTypeface(Typeface.MONOSPACE);
-//    }
+    private void adjustTextSize() {
+        DisplayMetrics metrics = getResources().getDisplayMetrics();
+        float screenWidthDp = metrics.widthPixels / metrics.density;
+
+        if (screenWidthDp >= 600) {
+            dependencyDetail.setTextSize(20);
+            activityTitle.setTextSize(28);
+        } else if (screenWidthDp >= 400) {
+            dependencyDetail.setTextSize(18);
+            activityTitle.setTextSize(26);
+        } else {
+            dependencyDetail.setTextSize(16);
+            activityTitle.setTextSize(24);
+        }
+
+        // Set monospaced font
+        dependencyDetail.setTypeface(Typeface.MONOSPACE);
+    }
 }

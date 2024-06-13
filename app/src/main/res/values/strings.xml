@@ -3,37 +3,58 @@
 
     <!-- String resources for dependencies -->
     <string-array name="dependencies_array">
-<!--        <item>Google Play Services Location</item>-->
+        <item>Google Play Services Location</item>
         <item>Pcap4j Core</item>
         <item>Jackson Core</item>
+<!--        <item>Jackson Annotations</item>-->
+<!--        <item>Jackson Databind</item>-->
         <item>OkHttp</item>
         <item>Flexbox</item>
         <item>Apache Commons Math3</item>
+        <item>AppCompat</item>
+        <item>Material Components</item>
+        <item>ConstraintLayout</item>
+        <item>Core</item>
         <item>Glide</item>
+<!--        <item>Glide Compiler</item>-->
+
+
 <!--        <item>App Update</item>-->
         <item>Zxing Android Embedded</item>
+
         <item>JUnit Jupiter</item>
+
         <item>Mockito Core</item>
-        <item>PowerMock API Mockito2</item>
-        <item>PowerMock Module JUnit4</item>
-<!--        <item>Test Core</item>-->
-<!--        <item>Test Ext JUnit</item>-->
-        <item>Mockito Android</item>
+
+        <item>PowerMock API </item>
+
+
+        <item>Test Core</item>
+
+
         <item>JUnit</item>
+
         <item>Espresso Core</item>
         <item>Undertow Core</item>
-         <item>Firebase </item>
+        <item>Undertow WebSockets JSR</item>
+        <item>Firebase </item>
 
         <item>Camera Core</item>
+        <item>Camera Camera2</item>
 
+        <item>Google Play Services ML Kit Text Recognition</item>
+
+        <item>Google Play Services Vision</item>
         <item>Java UUID Generator</item>
+
         <item>Stomp Protocol Android</item>
+
         <item>RxJava</item>
+
         <item>AWS Android SDK S3</item>
+
         <item>SceneForm</item>
-        <item>ML Kit Translate</item>
-        <item>Preference</item>
+
+
     </string-array>
-
-
 </resources>
